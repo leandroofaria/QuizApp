@@ -1,9 +1,9 @@
-package com.example.quizapp
+package com.example.quizapp.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.WindowManager
+import com.example.quizapp.R
 import com.example.quizapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            bottomMenu.setItemSelected(R.id.home)
+            bottomMenu.setItemSelected(R.id.Home)
             bottomMenu.setOnItemSelectedListener {
-                if(it==R.id.Board) {
-                    
+                if(it== R.id.Board) {
+
                 }
             }
         }
