@@ -36,15 +36,14 @@ class LeaderActivity : AppCompatActivity() {
             titleTop3Txt.text = users[2].name
 
             // Load images using Glide
-            Glide.with(root.context).load(R.drawable.pic1).into(pic1)
-            Glide.with(root.context).load(R.drawable.pic2).into(pic2)
-            Glide.with(root.context).load(R.drawable.pic3).into(pic3)
+            Glide.with(root.context).load(R.drawable.pic1).into(pic1);
+            Glide.with(root.context).load(R.drawable.pic2).into(pic2);
+            Glide.with(root.context).load(R.drawable.pic3).into(pic3);
 
-            // Handle bottom menu item selection
-            bottomMenu.setItemSelected(R.id.Board)
+// Handle bottom menu item selection
             bottomMenu.setOnItemSelectedListener {
-                if (it == R.id.home) {
-                    startActivity(Intent(this@LeaderActivity, MainActivity::class.java))
+                when (it) {
+                    R.id.home -> startActivity(Intent(this@LeaderActivity, MainActivity::class.java))
                 }
             }
 

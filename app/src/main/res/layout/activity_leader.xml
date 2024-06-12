@@ -134,7 +134,7 @@
                             android:src="@drawable/garnet" />
 
                         <TextView
-                            android:id="@+id/scoreTxt32"
+                            android:id="@+id/scoreTxt3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
