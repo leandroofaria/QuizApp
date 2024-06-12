@@ -169,12 +169,12 @@
                             app:strokeWidth="3dp" />
 
                         <ImageView
-                            android:id="@+id/imageView"
+                            android:id="@+id/crownImageView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="-2dp"
                             android:src="@drawable/crown"
-                            app:layout_constraintBottom_toTopOf="@+id/shapeableImageView"
+                            app:layout_constraintBottom_toTopOf="@+id/pic1"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/pic1" />
 
@@ -214,7 +214,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView23"
+                            android:id="@+id/imageView3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
@@ -254,11 +254,11 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.7"
                             app:shapeAppearanceOverlay="@style/CircleImageview"
-                            app:strokeColor="#BFBFC0"
+                            app:strokeColor="#C1C1C1"
                             app:strokeWidth="3dp" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/textView32"
                             android:layout_width="21dp"
                             android:layout_height="21dp"
                             android:background="@drawable/circle_top2"
@@ -293,7 +293,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView23"
+                            android:id="@+id/imageView4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
@@ -313,37 +313,28 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/leaderView"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:paddingBottom="80dp" />
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/navy_blue" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="Top"
+                android:textColor="@color/navy_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/bottomMenu"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/bottom_background"
-        android:padding="4dp"
-        app:cnb_backgroundColor="@color/blue"
-        app:cnb_iconColor="@color/blue"
-        app:cnb_iconSize="20dp"
-        app:cnb_menuResource="@menu/bottom_menu"
-        app:cnb_orientationMode="horizontal"
-        app:cnb_radius="50dp"
-        app:cnb_unselectedColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-
-
-        app:layout_constraintStart_toStartOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

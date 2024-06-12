@@ -1,5 +1,6 @@
 package com.example.quizapp.Activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             bottomMenu.setItemSelected(R.id.Home)
             bottomMenu.setOnItemSelectedListener {
                 if(it== R.id.Board) {
-
+                    startActivity(Intent(this@MainActivity, LeaderActivity::class.java))
                 }
             }
         }
